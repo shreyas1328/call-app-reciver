@@ -45,6 +45,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             disableReciver(this)
         })
 
+        btn_auto_start.setOnClickListener(View.OnClickListener {
+            Toast.makeText(this, android.os.Build.MANUFACTURER, Toast.LENGTH_SHORT).show()
+            autoStart(this)
+        })
+
     }
 
     private fun checkPerm() {
